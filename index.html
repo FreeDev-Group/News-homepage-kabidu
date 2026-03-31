@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | News homepage</title>
-
+  <link rel="stylesheet" href="./css/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -26,7 +26,7 @@
 <body>
   <header>
     <img src="./assets/images/logo.svg" alt="News homepage logo">
-    <nav>
+    <nav class="nav-links">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#new">New</a></li>
@@ -44,7 +44,7 @@
   <main class="container">
     <section class="hero">
       <picture class="hero-image">
-        <source media="(max-width: 768px)" srcset="./assets/images/image-web-3-mobile.jpg">
+        <source media="(max-width: 375px)" srcset="./assets/images/image-web-3-mobile.jpg">
         <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0 image">
       </picture>
       <div class="hero-content">
@@ -55,7 +55,7 @@
             We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
             of the
             people.
-            But is it really fulfilling its promise? <button class="btn btn-read-more">Read more</button>
+            But is it really fulfilling its promise? <button class="btn-read-more">Read more</button>
         </div>
       </div>
     </section>
@@ -78,12 +78,13 @@
     <section class="bottom-articles">
       <article class="card">
         <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+        <div class="card-text">
+          <span>01</span>
+          <h4>Reviving Rectro PCs</h4>
+          <p>what happens when old PXs are given updrades?</p>
+        </div>
       </article>
-      <div class="card-text">
-        <span>01</span>
-        <h4>Reviving Retro PCs</h4>
-        <p>What happens when old PCs are given modern upgrades?</p>
-      </div>
+      
       <article class="card">
         <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops">
         <div class="card-text">
@@ -105,7 +106,7 @@
   </main>
    <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Kabidu Munguakonkwa Sage</a>.
   </footer>
 </body>
 
