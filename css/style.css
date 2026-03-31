@@ -181,7 +181,7 @@ nav ul li a:hover {
     color: var(--Soft-red);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: flex;
     }
